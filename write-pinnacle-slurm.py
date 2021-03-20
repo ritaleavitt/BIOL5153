@@ -2,7 +2,7 @@
 
 # This script generates a pbs file for the AHPCC pinnacle cluster
 
-#Define some variables
+# Define some variables
 name = 'Trinity_assembly'
 queue = 'comp06'
 output = 'Trinity_'
