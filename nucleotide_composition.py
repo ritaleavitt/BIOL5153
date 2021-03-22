@@ -2,8 +2,17 @@
 
 # This script calculates the nucleotide composition of a DNA sequence
 
-# Assign the DNA sequence variable
-dna_sequence = 'ACGGATCCTATCAAATATTTCACATTTTCTATGATCATCTCTATTTTAGGTATTCGGGGAATCCTCCTTAATAGACGAAATATTCCTATTATGTCAATGCCAATTGAATCAATGTTATTAGCTGTGAATTCGAACTTTTTGGTATTTTCCGTTTCTTCGGATGATATGATGGGTCAATCATTTGCTTCATTGGTTCCAACGGTGGCAGCTGCGGAATCCGCTATTGGGTTAGCCATTTTCGTTATTACTTTCCGAGTCCGAGGGACTATTGCTGTAGAATTTATTAATAGCATTCAAGGTTAA'
+# set name of input DNA sequence file
+filename = 'dna.txt'
+
+# open the input file, assign to file handle called 'infile'
+infile = open(filename, 'r')
+
+# read the file
+dna_sequence = infile.read().rstrip()
+
+#close the file
+infile.close()
 
 # Finds the sequence length and prints it
 seqlen = len(dna_sequence)
